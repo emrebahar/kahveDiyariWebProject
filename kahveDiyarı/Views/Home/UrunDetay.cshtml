@@ -1,0 +1,26 @@
+﻿@model kahveDiyarı.Models.urunler
+@{
+    ViewBag.Title = "Ürünler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="product-item-title d-flex">
+                <div class="bg-faded p-5 d-flex ml-auto rounded">
+                    <h2 class="section-heading mb-0">
+                        <span class="section-heading-upper">@Model.ustbaslik</span>
+                        <span class="section-heading-lower">@Model.baslik</span>
+                    </h2>
+                </div>
+            </div>
+            <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="~/content/img/@Model.foto" alt="">
+            <div class="product-item-description d-flex mr-auto">
+                <div class="bg-faded p-5 rounded">
+                    @Html.Raw(Model.icerik)
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
