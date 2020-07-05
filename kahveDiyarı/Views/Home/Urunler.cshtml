@@ -22,8 +22,8 @@
                 <div class="product-item-description d-flex @(tek?"mr-auto" : "ml-auto")">
                     <div class="bg-faded p-5 rounded">
                         @Html.Raw(urun.icerik)
-                        @Html.ActionLink("Detay", "UrunDetay", new { id = urun.id, baslik = Seo.AdresDuzenle(urun.baslik) }, new { @class = "btn btn-info" })
-                        <a class="btn btn-info" href="/urun/@urun.id/@(Seo.AdresDuzenle(urun.baslik))">Detay</a>
+                        @*@Html.ActionLink("Detay", "UrunDetay", new { id = urun.id, baslik = Seo.AdresDuzenle(urun.baslik) }, new { @class = "btn btn-info" })*@
+                        @*<a class="btn btn-info" href="/urun/@urun.id/@(Seo.AdresDuzenle(urun.baslik))">Detay</a>*@
                     </div>
                 </div>
             </div>
