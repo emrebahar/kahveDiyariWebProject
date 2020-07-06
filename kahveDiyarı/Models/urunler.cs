@@ -11,15 +11,29 @@ namespace kahveDiyarı.Models
 {
     using System;
     using System.Collections.Generic;
+
+    using System.ComponentModel.DataAnnotations;
+    using System.Web;
+    using System.Web.Mvc;
     
     public partial class urunler
     {
         public int id { get; set; }
         public string foto { get; set; }
+        public virtual HttpPostedFileBase fotoFile { get; set; }
+        [Required]
+        [Display(Name = "Başlık")]
         public string baslik { get; set; }
+        [Required]
+        [Display(Name = "Üst Başlık")]
         public string ustbaslik { get; set; }
+        [Required]
+        [Display(Name = "İçerik")]
+        [AllowHtml]
         public string icerik { get; set; }
-        public Nullable<bool> aktif { get; set; }
+        public bool aktif { get; set; }
+        [Required]
+        [Display(Name = "Sıra")]
         public Nullable<int> sira { get; set; }
     }
 }

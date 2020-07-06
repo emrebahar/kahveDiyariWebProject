@@ -339,6 +339,14 @@
     <Content Include="Content\admin\plugins\summernote\summernote.min.css" />
     <Content Include="Content\admin\plugins\summernote\summernote.min.js" />
     <Content Include="Content\admin\plugins\summernote\summernote.min.js.LICENSE.txt" />
+    <Content Include="Content\admin\plugins\sweetalert2-theme-bootstrap-4\bootstrap-4.css" />
+    <Content Include="Content\admin\plugins\sweetalert2-theme-bootstrap-4\bootstrap-4.min.css" />
+    <Content Include="Content\admin\plugins\sweetalert2\sweetalert2.all.js" />
+    <Content Include="Content\admin\plugins\sweetalert2\sweetalert2.all.min.js" />
+    <Content Include="Content\admin\plugins\sweetalert2\sweetalert2.css" />
+    <Content Include="Content\admin\plugins\sweetalert2\sweetalert2.js" />
+    <Content Include="Content\admin\plugins\sweetalert2\sweetalert2.min.css" />
+    <Content Include="Content\admin\plugins\sweetalert2\sweetalert2.min.js" />
     <Content Include="Content\css\business-casual.css" />
     <Content Include="Content\css\business-casual.min.css" />
     <Content Include="Content\img\about.jpg" />
@@ -362,19 +370,14 @@
     <Content Include="Content\vendor\jquery\jquery.slim.js" />
     <Content Include="Content\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="Kaynak\about.html" />
     <Content Include="Kaynak\css\business-casual.css" />
     <Content Include="Kaynak\css\business-casual.min.css" />
-    <Content Include="Kaynak\gulpfile.js" />
     <Content Include="Kaynak\img\about.jpg" />
     <Content Include="Kaynak\img\bg.jpg" />
     <Content Include="Kaynak\img\intro.jpg" />
     <Content Include="Kaynak\img\products-01.jpg" />
     <Content Include="Kaynak\img\products-02.jpg" />
     <Content Include="Kaynak\img\products-03.jpg" />
-    <Content Include="Kaynak\index.html" />
-    <Content Include="Kaynak\products.html" />
-    <Content Include="Kaynak\store.html" />
     <Content Include="Kaynak\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Kaynak\vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Kaynak\vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -442,13 +445,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Kaynak\.browserslistrc" />
-    <Content Include="Kaynak\.gitignore" />
-    <Content Include="Kaynak\.travis.yml" />
-    <Content Include="Kaynak\LICENSE" />
-    <Content Include="Kaynak\package-lock.json" />
-    <Content Include="Kaynak\package.json" />
-    <Content Include="Kaynak\README.md" />
     <Content Include="Kaynak\scss\business-casual.scss" />
     <Content Include="Kaynak\scss\_about.scss" />
     <Content Include="Kaynak\scss\_bootstrap-overrides.scss" />
@@ -542,6 +538,8 @@
     <Content Include="Content\admin\plugins\summernote\summernote-lite.min.js.map" />
     <Content Include="Content\admin\plugins\summernote\summernote.js.map" />
     <Content Include="Content\admin\plugins\summernote\summernote.min.js.map" />
+    <Content Include="Content\admin\plugins\sweetalert2-theme-bootstrap-4\bootstrap-4.scss" />
+    <Content Include="Areas\admin\Views\Urunler\UrunForm.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

@@ -50,6 +50,8 @@ namespace kahveDiyarı.Areas.admin.Controllers
 
                 db.Entry(GuncellenecekVeri).CurrentValues.SetValues(GelenVeri);
                 db.SaveChanges();
+
+                TempData["hakkimdaGuncelle"] = " ";
                 return RedirectToAction("index", "hakkimizda");
             }
         }
