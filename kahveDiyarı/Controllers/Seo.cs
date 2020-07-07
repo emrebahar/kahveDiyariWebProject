@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace kahveDiyarı.App_Code
+namespace kahveDiyarı.Controllers
 {
     public class Seo
     {

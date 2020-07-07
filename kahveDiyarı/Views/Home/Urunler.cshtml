@@ -1,5 +1,5 @@
 ﻿@model List<kahveDiyarı.Models.urunler>
-@using kahveDiyarı.App_Code
+@using kahveDiyarı.Controllers
 @{
     ViewBag.Title = "Ürünler";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -22,8 +22,7 @@
                 <div class="product-item-description d-flex @(tek?"mr-auto" : "ml-auto")">
                     <div class="bg-faded p-5 rounded">
                         @Html.Raw(urun.icerik)
-                        @*@Html.ActionLink("Detay", "UrunDetay", new { id = urun.id, baslik = Seo.AdresDuzenle(urun.baslik) }, new { @class = "btn btn-info" })*@
-                        @*<a class="btn btn-info" href="/urun/@urun.id/@(Seo.AdresDuzenle(urun.baslik))">Detay</a>*@
+                        @Html.ActionLink("Detay", "UrunDetay", new { id = urun.id, baslik = Seo.AdresDuzenle(urun.baslik) }, new { @class = "btn btn-info" })
                     </div>
                 </div>
             </div>

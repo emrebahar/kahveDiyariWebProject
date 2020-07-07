@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using kahveDiyarı.Models;
-using kahveDiyarı.App_Code;
+using kahveDiyarı.Controllers;
 using System.IO;
 
 namespace kahveDiyarı.Areas.admin.Controllers

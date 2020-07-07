@@ -3,6 +3,11 @@
     ViewBag.Title = "Ürünler";
     Layout = "~/Areas/admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+    <style>
+        .field-validation-error{
+            color:red;
+        }
+    </style>
 
 <div class="content-wrapper">
     <div class="container">
@@ -20,6 +25,10 @@
                             <img src="~/Content/img/@Model.foto" width="250" />
                         }
                         @Html.TextBoxFor(m => m.fotoFile, new { type = "file" })
+                        @if (ViewBag.HataFoto != null)
+                        {
+                            <span class="field-validation-error" data-valmsg-for="FotoFile" data-valmsg-replace="true">@ViewBag.HataFoto</span>
+                        }
                     </td>
                 </tr>
                 <tr>
@@ -90,3 +99,4 @@
         })
     </script>
 
+}
